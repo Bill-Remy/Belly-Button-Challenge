@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center" style="background-color: lightblue">
+        <h1 style="color:Blue">"Umbilicus" Biodiversity Dashboard </h1>
+        <img src="300px-Human_navel,_female.jpg" alt="Female navel" width="100" length="100">
+        <p style="color:gray; font-weight:bold; font-style: italic;"> Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+          <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Demographic Info</h3>
+              </div>
+              <div id="sample-metadata" class="panel-body"></div>
+            </div>           
+      </div>
+      <div class="col-md-5">
+        <div class="tenor-gif-embed" data-postid="13649275" data-share-method="host" data-aspect-ratio="1.78571" data-width="50%"><a href="https://tenor.com/view/bacteria-petridish-cell-culture-lab-laboratory-gif-13649275">Bacteria Petridish GIF</a>from <a href="https://tenor.com/search/bacteria-gifs">Bacteria GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5" >
+        <iframe src="https://giphy.com/embed/l2Je5zDL6SM5pzhbW" width="180" height="120" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/season-4-the-simpsons-4x3-l2Je5zDL6SM5pzhbW">via GIPHY</a></p>
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12" >
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="plots.js"></script>
+
+</body>
+
+</html>
